@@ -13,6 +13,8 @@ the 2026 NCAA Men's and Women's basketball tournaments (Brier score / MSE evalua
 - `04-detailed-model.ipynb`, `05-ordinal-model.ipynb` — testing detailed box-score stats and
   power rankings against the baseline
 - `06-gbm-model.ipynb` — testing LightGBM/XGBoost against the same baseline
+- `07-gender-split-model.ipynb` — testing separate men's/women's models against the pooled
+  baseline
 
 Not every notebook was successful — the detailed stats, power rankings, and tree-based models
 all underperformed the simple baseline. Those results are kept rather than removed, since they
