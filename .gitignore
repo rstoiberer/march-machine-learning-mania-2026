@@ -1,0 +1,9 @@
+data/
+*.csv
+.ipynb_checkpoints/
+AutogluonModels/
+catboost_info/
+.DS_Store
+.Rhistory
+notebooks/Untitled.ipynb
+notebooks/*_transcript.txt
