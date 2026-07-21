@@ -17,6 +17,11 @@ the 2026 NCAA Men's and Women's basketball tournaments (Brier score / MSE evalua
   baseline
 - `08-data-scope-test.ipynb` — distributional tests (Levene's, Welch's t-test, KS) deciding
   whether training should widen from tournament-only to tournament + regular season, per gender
+- `09-combined-decisions-model.ipynb` — testing the gender split and data-scope decisions
+  stacked together
+- `10-momentum-model.ipynb` — testing last-10-game recent-form features against the gender-split
+  baseline
+- `11-elo-model.ipynb` — testing a margin-of-victory-weighted Elo rating feature; new best model
 
 Not every notebook was successful — the detailed stats, power rankings, and tree-based models
 all underperformed the simple baseline. Those results are kept rather than removed, since they
