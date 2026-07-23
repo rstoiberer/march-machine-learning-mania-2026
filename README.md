@@ -25,6 +25,8 @@ the 2026 NCAA Men's and Women's basketball tournaments (Brier score / MSE evalua
 - `12-elo-conference-model.ipynb` — testing whether extending Elo with conference tournament
   games improves on notebook 11
 - `13-conference-strength-model.ipynb` — testing a conference-strength feature; new best model
+- `14-elo-k-tuning-model.ipynb` — tuning the Elo K-factor per gender and fixing a conference-
+  strength bug found along the way; neither improved on notebook 13, which remains the best model
 
 Not every notebook was successful — the detailed stats, power rankings, and tree-based models
 all underperformed the simple baseline. Those results are kept rather than removed, since they
