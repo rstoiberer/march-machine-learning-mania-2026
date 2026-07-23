@@ -29,12 +29,28 @@ the 2026 NCAA Men's and Women's basketball tournaments (Brier score / MSE evalua
   strength bug found along the way; neither improved on notebook 13, which remains the best model
 - `15-interaction-features-model.ipynb` — testing feature interaction terms (SeedDiff x EloDiff,
   SeedDiff x ConfStrengthDiff); no meaningful change, notebook 13 remains the best model
+- `16-generate-submission.ipynb` — retrains the winning model on all historical data and
+  generates `submissions/submission.csv` for the actual competition submission
 
 Not every notebook was successful — the detailed stats, power rankings, and tree-based models
 all underperformed the simple baseline. Those results are kept rather than removed, since they
 ruled out real possibilities and shaped what came next. See `docs/training_data_plan.docx` for
 the reasoning behind the feature and modeling choices, and `docs/project_notes.md` for the full
 data schema, weekly plan, and EDA notes.
+
+## Result
+
+Final model: gender-split logistic regression with 5 features (seed, win rate, scoring margin,
+Elo rating, conference strength) — 0.1675 average Brier score across 2021-2025 walk-forward
+validation (see `notebooks/13-conference-strength-model.ipynb`).
+
+Submitted late to the actual 2026 competition leaderboard: **0.1302747** Brier score. That's
+notably better than the walk-forward estimate, which is expected rather than a sign the model is
+secretly stronger than measured — 2026 was, by other competitors' accounts, an unusually
+low-upset ("chalky") tournament, and with only ~126 total scored games, a favorite-heavy year
+plus a small sample size can swing the actual score substantially in either direction. The
+walk-forward number remains the more honest estimate of this model's typical performance; the
+leaderboard score reflects how it did on the one tournament that actually counted.
 
 ## Setup
 
