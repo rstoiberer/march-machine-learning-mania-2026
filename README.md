@@ -31,6 +31,13 @@ the 2026 NCAA Men's and Women's basketball tournaments (Brier score / MSE evalua
   SeedDiff x ConfStrengthDiff); no meaningful change, notebook 13 remains the best model
 - `16-generate-submission.ipynb` — retrains the winning model on all historical data and
   generates `submissions/submission.csv` for the actual competition submission
+- `17-team-clustering.ipynb` — unsupervised k-means clustering of teams by seed, win rate,
+  scoring margin, Elo, and conference strength, exploring whether meaningful tiers emerge
+- `18-cluster-prediction-model.ipynb` — testing whether clustering can improve the prediction: a
+  cluster-only lookup table performed poorly, but adding cluster rank as a 6th feature to the
+  existing model gave a small improvement; new best model
+- `19-generate-submission-v2.ipynb` — retrains the new best model (notebook 18) on all historical
+  data and generates `submissions/submission_v2.csv`
 
 Not every notebook was successful — the detailed stats, power rankings, and tree-based models
 all underperformed the simple baseline. Those results are kept rather than removed, since they
@@ -40,17 +47,22 @@ data schema, weekly plan, and EDA notes.
 
 ## Result
 
-Final model: gender-split logistic regression with 5 features (seed, win rate, scoring margin,
+First model: gender-split logistic regression with 5 features (seed, win rate, scoring margin,
 Elo rating, conference strength) — 0.1675 average Brier score across 2021-2025 walk-forward
 validation (see `notebooks/13-conference-strength-model.ipynb`).
 
-Submitted late to the actual 2026 competition leaderboard: **0.1302747** Brier score. That's
-notably better than the walk-forward estimate, which is expected rather than a sign the model is
-secretly stronger than measured — 2026 was, by other competitors' accounts, an unusually
-low-upset ("chalky") tournament, and with only ~126 total scored games, a favorite-heavy year
-plus a small sample size can swing the actual score substantially in either direction. The
-walk-forward number remains the more honest estimate of this model's typical performance; the
-leaderboard score reflects how it did on the one tournament that actually counted.
+Submitted to the actual 2026 competition leaderboard: **0.1302747** Brier score. That's notably
+better than the walk-forward estimate, which is expected rather than a sign the model is secretly
+stronger than measured — 2026 was, by other competitors' accounts, an unusually low-upset
+("chalky") tournament, and with only ~126 total scored games, a favorite-heavy year plus a small
+sample size can swing the actual score substantially in either direction. The walk-forward number
+remains the more honest estimate of this model's typical performance; the leaderboard score
+reflects how it did on the one tournament that actually counted.
+
+Second model: the same 5 features plus a per-gender cluster rank (`notebooks/18-cluster-prediction-model.ipynb`)
+— 0.1669 average walk-forward Brier, a small improvement. Submitted as `submissions/submission_v2.csv`
+(see `notebooks/19-generate-submission-v2.ipynb`): **rank 482** on the leaderboard, an improvement
+over the first submission.
 
 ## Setup
 
