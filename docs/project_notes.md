@@ -83,6 +83,12 @@ Updated after the July 16 meeting: training separate men's/women's models instea
 and using a formal distributional comparison (F-test/Levene/KS-test) to decide whether to widen
 training data beyond tournament-only games, rather than assuming either approach.
 
+**Note: the plan above is preserved as it stood in week 1.** In practice, hand-written logistic
+regression (Newton's method / IRLS, no scikit-learn) ended up outperforming XGBoost/LightGBM on
+every feature set tested, so it became the production model rather than a baseline to beat.
+Polars, AutoGluon, and Optuna were never used in the final notebooks — see *Modeling results*
+below for what actually happened, notebook by notebook.
+
 ## EDA findings
 
 Full table-by-table output in `notebooks/01-eda.ipynb`. Headlines:
@@ -132,28 +138,52 @@ no women's equivalent file exists in this dataset.
 **Data integrity checks passed:** every TeamID referenced in tourney results exists in the Teams
 table; no season appears in tourney results without a matching seeds entry.
 
-## Modeling results so far (notebooks 3-6)
+## Modeling results (notebooks 3-19)
 
-Walk-forward validated (2021-2025 folds, training strictly on prior seasons each time). Lower
-Brier is better.
+Walk-forward validated (2021-2025 folds, training strictly on prior seasons each time, combined
+across genders where both exist). Lower Brier is better.
 
-| Model | Avg. Brier |
-|---|---|
-| Logistic regression, compact features (seed/win-rate/margin), full history | **0.1739** |
-| Logistic regression, + detailed box-score stats | 0.1759 |
-| Logistic regression, seed-only vs. ranking-only (men's) | seed 0.2031 / ranking 0.2063 |
-| Logistic regression, + Massey Ordinal ranking (men's) | 0.2037 |
-| LightGBM, compact features | 0.1775 |
-| LightGBM, all features (compact + detailed + ordinal) | 0.1804 |
-| XGBoost, all features | 0.1822 |
+| Notebook | Approach | Avg. Brier | Outcome |
+|---|---|---|---|
+| 03 | Logistic regression, compact features (seed/win-rate/margin), pooled, full history | 0.1739 | Baseline |
+| 04 | + detailed box-score stats | 0.1759 | Worse, rejected |
+| 05 | Seed-only vs. ranking-only (men's); + Massey Ordinal ranking | seed 0.2031 / ranking 0.2063 / +ordinal 0.2037 | Worse, rejected |
+| 06 | LightGBM (compact) / LightGBM (all features) / XGBoost (all features) | 0.1775 / 0.1804 / 0.1822 | All worse than logistic regression, rejected |
+| 07 | Gender-split models (separate men's/women's), tournament-only | 0.1711 | Better, adopted |
+| 08 | Distributional tests (Levene's, Welch's t-test, KS) on training-data scope | — | Decided: men's widens to regular season + tournament, women's stays tournament-only |
+| 09 | Gender split + widened men's training data | 0.1715 | Slightly worse, rejected |
+| 10 | + last-10-game momentum features | 0.1709 | Wash, rejected |
+| 11 | + margin-of-victory-weighted Elo rating | 0.1687 | Better, adopted |
+| 12 | Elo extended with conference tournament games | 0.1691 | Worse, rejected — kept regular-season-only Elo |
+| 13 | + conference-strength feature | 0.1675 | Better, adopted (standing best through notebook 17) |
+| 14 | Elo K-factor tuning per gender + conference-strength bug fix | 0.1690 (tuned K) / 0.1683 (bug fix, K=20) | Both worse than notebook 13, rejected — notebook 13's model, including its known bug, kept |
+| 15 | + feature interaction terms (SeedDiff × EloDiff, SeedDiff × ConfStrengthDiff) | 0.1673 / 0.1674 | No meaningful change, rejected |
+| 16 | Generate submission — retrain notebook 13's model on all history | — | `submissions/submission.csv`; scored **0.1302747** on the real Kaggle leaderboard |
+| 17 | Team clustering (k-means, unsupervised, exploratory) | — | No Brier score (unsupervised); found recognizable tiers and some seed/tier mismatches |
+| 18 | Cluster-only lookup table / base model + cluster rank as a 6th feature | 0.1886 / 0.1669 | Lookup table much worse, rejected; cluster rank as an added feature better, adopted — new best |
+| 19 | Generate submission v2 — retrain notebook 18's model on all history | — | `submissions/submission_v2.csv`; improved leaderboard rank to **482** |
 
-The plain 3-feature logistic regression is still the best result. Adding detailed stats, adding
-ranking, and switching to gradient-boosted trees all underperformed it — mostly due to
-multicollinearity between the added features and the ones already in the model, confirmed via
-correlation checks in notebooks 4 and 5, and via a feature-importance check in notebook 6
-showing the tree model *did* use the extra features more than logistic regression's coefficients
-suggested, without that translating into a better score. Current best next step: hyperparameter
-tuning, and/or restructuring around separate men's/women's models per the July 16 meeting.
+Final model (notebooks 18/19): gender-split logistic regression with 6 features — SeedDiff,
+WinPctDiff, AvgMarginDiff, EloDiff, ConfStrengthDiff, ClusterRankDiff.
+
+A pattern holds across the whole run: every feature that helped (gender split, Elo, conference
+strength, cluster rank) earned its place purely on held-out 2021-2025 performance, never assumed.
+Just as many plausible-sounding ideas — detailed box-score stats, power rankings, tree-based
+models, widened training data, momentum, interaction terms — were tested with the same rigor and
+rejected when they didn't hold up. Notebook 13's conference-strength calculation carries a known
+bug (cross-gender blending, caught while building notebook 14) that was kept deliberately, since
+the bug-fixed version scored worse on the real test folds — an explicit, empirically-driven call,
+not an oversight.
+
+## Result
+
+First submission (notebook 16, notebook 13's model): **0.1302747** on the real 2026 competition
+leaderboard — notably better than the 0.1675 walk-forward estimate, consistent with 2026 being an
+unusually low-upset ("chalky") tournament and a small ~126-game sample size.
+
+Second submission (notebook 19, notebook 18's model): improved the leaderboard position to
+**rank 482**, using the 6-feature model that added cluster rank (0.1669 average walk-forward
+Brier, vs. 0.1675 for the first model).
 
 ## Setup
 
