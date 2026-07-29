@@ -1,0 +1,1393 @@
+{
+  "season": 2026,
+  "features_order": [
+    "SeedDiff",
+    "WinPctDiff",
+    "AvgMarginDiff",
+    "EloDiff",
+    "ConfStrengthDiff",
+    "ClusterRankDiff"
+  ],
+  "weights": {
+    "M": [
+      -0.01555132,
+      0.05131558,
+      -1.02070905,
+      0.06149063,
+      0.00484013,
+      0.00229598,
+      0.11911911
+    ],
+    "W": [
+      0.09602021,
+      0.11350026,
+      -1.53798264,
+      0.0672638,
+      0.00465945,
+      0.00339384,
+      0.06380954
+    ]
+  },
+  "teams": {
+    "1181": {
+      "gender": "M",
+      "team_name": "Duke",
+      "seed": 1,
+      "win_pct": 0.941176,
+      "avg_score_margin": 19.1471,
+      "elo": 2065.0228,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 1
+    },
+    "1163": {
+      "gender": "M",
+      "team_name": "Connecticut",
+      "seed": 2,
+      "win_pct": 0.852941,
+      "avg_score_margin": 12.3824,
+      "elo": 1876.3135,
+      "conf_strength": 1647.5787,
+      "cluster_rank": 1
+    },
+    "1277": {
+      "gender": "M",
+      "team_name": "Michigan St",
+      "seed": 3,
+      "win_pct": 0.78125,
+      "avg_score_margin": 10.5312,
+      "elo": 1866.7409,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 2
+    },
+    "1242": {
+      "gender": "M",
+      "team_name": "Kansas",
+      "seed": 4,
+      "win_pct": 0.69697,
+      "avg_score_margin": 6.2424,
+      "elo": 1788.9488,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 2
+    },
+    "1385": {
+      "gender": "M",
+      "team_name": "St John's",
+      "seed": 5,
+      "win_pct": 0.823529,
+      "avg_score_margin": 11.5882,
+      "elo": 1955.5908,
+      "conf_strength": 1647.5787,
+      "cluster_rank": 1
+    },
+    "1257": {
+      "gender": "M",
+      "team_name": "Louisville",
+      "seed": 6,
+      "win_pct": 0.69697,
+      "avg_score_margin": 12.5758,
+      "elo": 1789.7015,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 2
+    },
+    "1417": {
+      "gender": "M",
+      "team_name": "UCLA",
+      "seed": 7,
+      "win_pct": 0.676471,
+      "avg_score_margin": 6.7353,
+      "elo": 1783.9376,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 4
+    },
+    "1326": {
+      "gender": "M",
+      "team_name": "Ohio St",
+      "seed": 8,
+      "win_pct": 0.636364,
+      "avg_score_margin": 7.0,
+      "elo": 1765.3558,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 4
+    },
+    "1395": {
+      "gender": "M",
+      "team_name": "TCU",
+      "seed": 9,
+      "win_pct": 0.666667,
+      "avg_score_margin": 6.2424,
+      "elo": 1750.9635,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 4
+    },
+    "1416": {
+      "gender": "M",
+      "team_name": "UCF",
+      "seed": 10,
+      "win_pct": 0.65625,
+      "avg_score_margin": 2.5,
+      "elo": 1662.0724,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 4
+    },
+    "1378": {
+      "gender": "M",
+      "team_name": "South Florida",
+      "seed": 11,
+      "win_pct": 0.75,
+      "avg_score_margin": 10.6875,
+      "elo": 1803.9477,
+      "conf_strength": 1525.4534,
+      "cluster_rank": 3
+    },
+    "1320": {
+      "gender": "M",
+      "team_name": "Northern Iowa",
+      "seed": 12,
+      "win_pct": 0.647059,
+      "avg_score_margin": 7.0,
+      "elo": 1718.2698,
+      "conf_strength": 1497.6094,
+      "cluster_rank": 3
+    },
+    "1465": {
+      "gender": "M",
+      "team_name": "Cal Baptist",
+      "seed": 13,
+      "win_pct": 0.757576,
+      "avg_score_margin": 5.4545,
+      "elo": 1676.1648,
+      "conf_strength": 1464.1759,
+      "cluster_rank": 3
+    },
+    "1295": {
+      "gender": "M",
+      "team_name": "N Dakota St",
+      "seed": 14,
+      "win_pct": 0.774194,
+      "avg_score_margin": 8.2903,
+      "elo": 1669.0545,
+      "conf_strength": 1424.632,
+      "cluster_rank": 3
+    },
+    "1202": {
+      "gender": "M",
+      "team_name": "Furman",
+      "seed": 15,
+      "win_pct": 0.612903,
+      "avg_score_margin": 2.9032,
+      "elo": 1591.8251,
+      "conf_strength": 1422.5762,
+      "cluster_rank": 5
+    },
+    "1373": {
+      "gender": "M",
+      "team_name": "Siena",
+      "seed": 16,
+      "win_pct": 0.676471,
+      "avg_score_margin": 4.8529,
+      "elo": 1611.8845,
+      "conf_strength": 1412.8313,
+      "cluster_rank": 5
+    },
+    "1196": {
+      "gender": "M",
+      "team_name": "Florida",
+      "seed": 1,
+      "win_pct": 0.787879,
+      "avg_score_margin": 14.7879,
+      "elo": 1963.1031,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 1
+    },
+    "1222": {
+      "gender": "M",
+      "team_name": "Houston",
+      "seed": 2,
+      "win_pct": 0.823529,
+      "avg_score_margin": 14.2941,
+      "elo": 1947.2513,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 1
+    },
+    "1228": {
+      "gender": "M",
+      "team_name": "Illinois",
+      "seed": 3,
+      "win_pct": 0.75,
+      "avg_score_margin": 14.5625,
+      "elo": 1870.588,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 1
+    },
+    "1304": {
+      "gender": "M",
+      "team_name": "Nebraska",
+      "seed": 4,
+      "win_pct": 0.8125,
+      "avg_score_margin": 11.0625,
+      "elo": 1778.3335,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 2
+    },
+    "1435": {
+      "gender": "M",
+      "team_name": "Vanderbilt",
+      "seed": 5,
+      "win_pct": 0.764706,
+      "avg_score_margin": 11.1471,
+      "elo": 1866.4269,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 2
+    },
+    "1314": {
+      "gender": "M",
+      "team_name": "North Carolina",
+      "seed": 6,
+      "win_pct": 0.75,
+      "avg_score_margin": 8.4688,
+      "elo": 1782.0583,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 2
+    },
+    "1388": {
+      "gender": "M",
+      "team_name": "St Mary's CA",
+      "seed": 7,
+      "win_pct": 0.83871,
+      "avg_score_margin": 12.3226,
+      "elo": 1875.0647,
+      "conf_strength": 1524.0813,
+      "cluster_rank": 1
+    },
+    "1155": {
+      "gender": "M",
+      "team_name": "Clemson",
+      "seed": 8,
+      "win_pct": 0.705882,
+      "avg_score_margin": 7.4118,
+      "elo": 1747.4037,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 4
+    },
+    "1234": {
+      "gender": "M",
+      "team_name": "Iowa",
+      "seed": 9,
+      "win_pct": 0.636364,
+      "avg_score_margin": 9.2424,
+      "elo": 1714.0984,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 4
+    },
+    "1401": {
+      "gender": "M",
+      "team_name": "Texas A&M",
+      "seed": 10,
+      "win_pct": 0.65625,
+      "avg_score_margin": 8.1562,
+      "elo": 1701.9804,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 4
+    },
+    "1433": {
+      "gender": "M",
+      "team_name": "VCU",
+      "seed": 11,
+      "win_pct": 0.794118,
+      "avg_score_margin": 10.0882,
+      "elo": 1847.4731,
+      "conf_strength": 1560.7609,
+      "cluster_rank": 3
+    },
+    "1270": {
+      "gender": "M",
+      "team_name": "McNeese St",
+      "seed": 12,
+      "win_pct": 0.83871,
+      "avg_score_margin": 9.8065,
+      "elo": 1772.2957,
+      "conf_strength": 1408.1036,
+      "cluster_rank": 3
+    },
+    "1407": {
+      "gender": "M",
+      "team_name": "Troy",
+      "seed": 13,
+      "win_pct": 0.645161,
+      "avg_score_margin": 3.8065,
+      "elo": 1611.3502,
+      "conf_strength": 1489.2962,
+      "cluster_rank": 5
+    },
+    "1335": {
+      "gender": "M",
+      "team_name": "Penn",
+      "seed": 14,
+      "win_pct": 0.607143,
+      "avg_score_margin": 1.2143,
+      "elo": 1614.8679,
+      "conf_strength": 1538.5138,
+      "cluster_rank": 5
+    },
+    "1225": {
+      "gender": "M",
+      "team_name": "Idaho",
+      "seed": 15,
+      "win_pct": 0.5625,
+      "avg_score_margin": 2.6562,
+      "elo": 1531.5437,
+      "conf_strength": 1440.5818,
+      "cluster_rank": 5
+    },
+    "1250": {
+      "gender": "M",
+      "team_name": "Lehigh",
+      "seed": 16,
+      "win_pct": 0.5,
+      "avg_score_margin": -2.2812,
+      "elo": 1436.1818,
+      "conf_strength": 1390.5578,
+      "cluster_rank": 5
+    },
+    "1341": {
+      "gender": "M",
+      "team_name": "Prairie View",
+      "seed": 16,
+      "win_pct": 0.451613,
+      "avg_score_margin": -2.8065,
+      "elo": 1405.7676,
+      "conf_strength": 1297.8526,
+      "cluster_rank": 5
+    },
+    "1276": {
+      "gender": "M",
+      "team_name": "Michigan",
+      "seed": 1,
+      "win_pct": 0.911765,
+      "avg_score_margin": 17.6176,
+      "elo": 2021.3319,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 1
+    },
+    "1235": {
+      "gender": "M",
+      "team_name": "Iowa St",
+      "seed": 2,
+      "win_pct": 0.794118,
+      "avg_score_margin": 16.6471,
+      "elo": 1870.4482,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 1
+    },
+    "1438": {
+      "gender": "M",
+      "team_name": "Virginia",
+      "seed": 3,
+      "win_pct": 0.852941,
+      "avg_score_margin": 12.2353,
+      "elo": 1868.3151,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 1
+    },
+    "1104": {
+      "gender": "M",
+      "team_name": "Alabama",
+      "seed": 4,
+      "win_pct": 0.71875,
+      "avg_score_margin": 8.25,
+      "elo": 1847.5453,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 2
+    },
+    "1403": {
+      "gender": "M",
+      "team_name": "Texas Tech",
+      "seed": 5,
+      "win_pct": 0.6875,
+      "avg_score_margin": 7.7812,
+      "elo": 1787.81,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 2
+    },
+    "1397": {
+      "gender": "M",
+      "team_name": "Tennessee",
+      "seed": 6,
+      "win_pct": 0.666667,
+      "avg_score_margin": 10.0909,
+      "elo": 1804.0894,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 2
+    },
+    "1246": {
+      "gender": "M",
+      "team_name": "Kentucky",
+      "seed": 7,
+      "win_pct": 0.617647,
+      "avg_score_margin": 6.9412,
+      "elo": 1751.3796,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 4
+    },
+    "1208": {
+      "gender": "M",
+      "team_name": "Georgia",
+      "seed": 8,
+      "win_pct": 0.6875,
+      "avg_score_margin": 10.6562,
+      "elo": 1734.8329,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 2
+    },
+    "1387": {
+      "gender": "M",
+      "team_name": "St Louis",
+      "seed": 9,
+      "win_pct": 0.84375,
+      "avg_score_margin": 15.75,
+      "elo": 1753.2195,
+      "conf_strength": 1560.7609,
+      "cluster_rank": 3
+    },
+    "1365": {
+      "gender": "M",
+      "team_name": "Santa Clara",
+      "seed": 10,
+      "win_pct": 0.757576,
+      "avg_score_margin": 9.8182,
+      "elo": 1798.9229,
+      "conf_strength": 1524.0813,
+      "cluster_rank": 3
+    },
+    "1275": {
+      "gender": "M",
+      "team_name": "Miami OH",
+      "seed": 11,
+      "win_pct": 0.965517,
+      "avg_score_margin": 10.8621,
+      "elo": 1768.8142,
+      "conf_strength": 1476.1277,
+      "cluster_rank": 3
+    },
+    "1374": {
+      "gender": "M",
+      "team_name": "SMU",
+      "seed": 11,
+      "win_pct": 0.606061,
+      "avg_score_margin": 6.6061,
+      "elo": 1651.1247,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 4
+    },
+    "1103": {
+      "gender": "M",
+      "team_name": "Akron",
+      "seed": 12,
+      "win_pct": 0.84375,
+      "avg_score_margin": 12.375,
+      "elo": 1811.8253,
+      "conf_strength": 1476.1277,
+      "cluster_rank": 3
+    },
+    "1220": {
+      "gender": "M",
+      "team_name": "Hofstra",
+      "seed": 13,
+      "win_pct": 0.6875,
+      "avg_score_margin": 6.9375,
+      "elo": 1700.7739,
+      "conf_strength": 1465.164,
+      "cluster_rank": 3
+    },
+    "1460": {
+      "gender": "M",
+      "team_name": "Wright St",
+      "seed": 14,
+      "win_pct": 0.65625,
+      "avg_score_margin": 4.5625,
+      "elo": 1595.2541,
+      "conf_strength": 1442.7008,
+      "cluster_rank": 5
+    },
+    "1398": {
+      "gender": "M",
+      "team_name": "Tennessee St",
+      "seed": 15,
+      "win_pct": 0.689655,
+      "avg_score_margin": 4.1379,
+      "elo": 1619.0807,
+      "conf_strength": 1399.2631,
+      "cluster_rank": 5
+    },
+    "1224": {
+      "gender": "M",
+      "team_name": "Howard",
+      "seed": 16,
+      "win_pct": 0.655172,
+      "avg_score_margin": 7.2069,
+      "elo": 1556.9353,
+      "conf_strength": 1300.0683,
+      "cluster_rank": 5
+    },
+    "1420": {
+      "gender": "M",
+      "team_name": "UMBC",
+      "seed": 16,
+      "win_pct": 0.733333,
+      "avg_score_margin": 7.4667,
+      "elo": 1612.4724,
+      "conf_strength": 1413.4404,
+      "cluster_rank": 3
+    },
+    "1112": {
+      "gender": "M",
+      "team_name": "Arizona",
+      "seed": 1,
+      "win_pct": 0.941176,
+      "avg_score_margin": 17.3529,
+      "elo": 2038.3125,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 1
+    },
+    "1345": {
+      "gender": "M",
+      "team_name": "Purdue",
+      "seed": 2,
+      "win_pct": 0.771429,
+      "avg_score_margin": 11.5143,
+      "elo": 1912.9099,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 1
+    },
+    "1211": {
+      "gender": "M",
+      "team_name": "Gonzaga",
+      "seed": 3,
+      "win_pct": 0.909091,
+      "avg_score_margin": 19.1212,
+      "elo": 1930.0772,
+      "conf_strength": 1524.0813,
+      "cluster_rank": 1
+    },
+    "1116": {
+      "gender": "M",
+      "team_name": "Arkansas",
+      "seed": 4,
+      "win_pct": 0.764706,
+      "avg_score_margin": 9.8529,
+      "elo": 1886.2878,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 2
+    },
+    "1458": {
+      "gender": "M",
+      "team_name": "Wisconsin",
+      "seed": 5,
+      "win_pct": 0.705882,
+      "avg_score_margin": 7.0882,
+      "elo": 1819.5672,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 2
+    },
+    "1140": {
+      "gender": "M",
+      "team_name": "BYU",
+      "seed": 6,
+      "win_pct": 0.676471,
+      "avg_score_margin": 8.5882,
+      "elo": 1755.367,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 2
+    },
+    "1274": {
+      "gender": "M",
+      "team_name": "Miami FL",
+      "seed": 7,
+      "win_pct": 0.757576,
+      "avg_score_margin": 10.7576,
+      "elo": 1744.8205,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 2
+    },
+    "1437": {
+      "gender": "M",
+      "team_name": "Villanova",
+      "seed": 8,
+      "win_pct": 0.75,
+      "avg_score_margin": 6.375,
+      "elo": 1742.9019,
+      "conf_strength": 1647.5787,
+      "cluster_rank": 2
+    },
+    "1429": {
+      "gender": "M",
+      "team_name": "Utah St",
+      "seed": 9,
+      "win_pct": 0.818182,
+      "avg_score_margin": 10.8485,
+      "elo": 1827.4604,
+      "conf_strength": 1546.6563,
+      "cluster_rank": 3
+    },
+    "1281": {
+      "gender": "M",
+      "team_name": "Missouri",
+      "seed": 10,
+      "win_pct": 0.625,
+      "avg_score_margin": 4.3125,
+      "elo": 1662.9364,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 4
+    },
+    "1301": {
+      "gender": "M",
+      "team_name": "NC State",
+      "seed": 11,
+      "win_pct": 0.606061,
+      "avg_score_margin": 7.1818,
+      "elo": 1679.7784,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 4
+    },
+    "1400": {
+      "gender": "M",
+      "team_name": "Texas",
+      "seed": 11,
+      "win_pct": 0.548387,
+      "avg_score_margin": 5.871,
+      "elo": 1662.4911,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 4
+    },
+    "1219": {
+      "gender": "M",
+      "team_name": "High Point",
+      "seed": 12,
+      "win_pct": 0.870968,
+      "avg_score_margin": 14.6452,
+      "elo": 1757.6786,
+      "conf_strength": 1364.7078,
+      "cluster_rank": 3
+    },
+    "1218": {
+      "gender": "M",
+      "team_name": "Hawaii",
+      "seed": 13,
+      "win_pct": 0.733333,
+      "avg_score_margin": 8.4333,
+      "elo": 1587.8067,
+      "conf_strength": 1449.2561,
+      "cluster_rank": 3
+    },
+    "1244": {
+      "gender": "M",
+      "team_name": "Kennesaw",
+      "seed": 14,
+      "win_pct": 0.580645,
+      "avg_score_margin": 2.129,
+      "elo": 1588.2303,
+      "conf_strength": 1486.8167,
+      "cluster_rank": 5
+    },
+    "1474": {
+      "gender": "M",
+      "team_name": "Queens NC",
+      "seed": 15,
+      "win_pct": 0.606061,
+      "avg_score_margin": 1.6667,
+      "elo": 1570.8328,
+      "conf_strength": 1419.2634,
+      "cluster_rank": 5
+    },
+    "1254": {
+      "gender": "M",
+      "team_name": "LIU Brooklyn",
+      "seed": 16,
+      "win_pct": 0.705882,
+      "avg_score_margin": 2.9706,
+      "elo": 1552.5782,
+      "conf_strength": 1289.1493,
+      "cluster_rank": 5
+    },
+    "3163": {
+      "gender": "W",
+      "team_name": "Connecticut",
+      "seed": 1,
+      "win_pct": 1.0,
+      "avg_score_margin": 38.3824,
+      "elo": 2204.4227,
+      "conf_strength": 1647.5787,
+      "cluster_rank": 1
+    },
+    "3435": {
+      "gender": "W",
+      "team_name": "Vanderbilt",
+      "seed": 2,
+      "win_pct": 0.870968,
+      "avg_score_margin": 19.1613,
+      "elo": 1940.3743,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 2
+    },
+    "3326": {
+      "gender": "W",
+      "team_name": "Ohio St",
+      "seed": 3,
+      "win_pct": 0.787879,
+      "avg_score_margin": 15.5152,
+      "elo": 1988.4634,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 2
+    },
+    "3314": {
+      "gender": "W",
+      "team_name": "North Carolina",
+      "seed": 4,
+      "win_pct": 0.787879,
+      "avg_score_margin": 16.4545,
+      "elo": 1942.2271,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 2
+    },
+    "3268": {
+      "gender": "W",
+      "team_name": "Maryland",
+      "seed": 5,
+      "win_pct": 0.741935,
+      "avg_score_margin": 19.0323,
+      "elo": 1856.2204,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 2
+    },
+    "3323": {
+      "gender": "W",
+      "team_name": "Notre Dame",
+      "seed": 6,
+      "win_pct": 0.6875,
+      "avg_score_margin": 13.0,
+      "elo": 1904.2732,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 3
+    },
+    "3228": {
+      "gender": "W",
+      "team_name": "Illinois",
+      "seed": 7,
+      "win_pct": 0.65625,
+      "avg_score_margin": 11.375,
+      "elo": 1788.2495,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 3
+    },
+    "3235": {
+      "gender": "W",
+      "team_name": "Iowa St",
+      "seed": 8,
+      "win_pct": 0.709677,
+      "avg_score_margin": 15.1613,
+      "elo": 1779.7325,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 3
+    },
+    "3393": {
+      "gender": "W",
+      "team_name": "Syracuse",
+      "seed": 9,
+      "win_pct": 0.741935,
+      "avg_score_margin": 11.0645,
+      "elo": 1760.4115,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 3
+    },
+    "3160": {
+      "gender": "W",
+      "team_name": "Colorado",
+      "seed": 10,
+      "win_pct": 0.666667,
+      "avg_score_margin": 7.1212,
+      "elo": 1806.4071,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 6
+    },
+    "3193": {
+      "gender": "W",
+      "team_name": "Fairfield",
+      "seed": 11,
+      "win_pct": 0.875,
+      "avg_score_margin": 19.7188,
+      "elo": 1882.1952,
+      "conf_strength": 1412.8313,
+      "cluster_rank": 4
+    },
+    "3293": {
+      "gender": "W",
+      "team_name": "Murray St",
+      "seed": 12,
+      "win_pct": 0.909091,
+      "avg_score_margin": 11.6667,
+      "elo": 1845.5956,
+      "conf_strength": 1497.6094,
+      "cluster_rank": 4
+    },
+    "3442": {
+      "gender": "W",
+      "team_name": "W Illinois",
+      "seed": 13,
+      "win_pct": 0.821429,
+      "avg_score_margin": 12.3571,
+      "elo": 1683.031,
+      "conf_strength": 1399.2631,
+      "cluster_rank": 7
+    },
+    "3224": {
+      "gender": "W",
+      "team_name": "Howard",
+      "seed": 14,
+      "win_pct": 0.787879,
+      "avg_score_margin": 7.0,
+      "elo": 1682.8486,
+      "conf_strength": 1300.0683,
+      "cluster_rank": 7
+    },
+    "3219": {
+      "gender": "W",
+      "team_name": "High Point",
+      "seed": 15,
+      "win_pct": 0.833333,
+      "avg_score_margin": 13.0667,
+      "elo": 1620.9662,
+      "conf_strength": 1364.7078,
+      "cluster_rank": 7
+    },
+    "3427": {
+      "gender": "W",
+      "team_name": "UT San Antonio",
+      "seed": 16,
+      "win_pct": 0.53125,
+      "avg_score_margin": 0.9375,
+      "elo": 1711.2119,
+      "conf_strength": 1525.4534,
+      "cluster_rank": 8
+    },
+    "3376": {
+      "gender": "W",
+      "team_name": "South Carolina",
+      "seed": 1,
+      "win_pct": 0.911765,
+      "avg_score_margin": 28.3529,
+      "elo": 2137.7546,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 1
+    },
+    "3234": {
+      "gender": "W",
+      "team_name": "Iowa",
+      "seed": 2,
+      "win_pct": 0.8125,
+      "avg_score_margin": 11.625,
+      "elo": 1998.1179,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 2
+    },
+    "3395": {
+      "gender": "W",
+      "team_name": "TCU",
+      "seed": 3,
+      "win_pct": 0.852941,
+      "avg_score_margin": 21.2647,
+      "elo": 1998.3982,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 2
+    },
+    "3328": {
+      "gender": "W",
+      "team_name": "Oklahoma",
+      "seed": 4,
+      "win_pct": 0.774194,
+      "avg_score_margin": 18.6129,
+      "elo": 1921.9932,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 2
+    },
+    "3277": {
+      "gender": "W",
+      "team_name": "Michigan St",
+      "seed": 5,
+      "win_pct": 0.733333,
+      "avg_score_margin": 17.1333,
+      "elo": 1834.8038,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 3
+    },
+    "3449": {
+      "gender": "W",
+      "team_name": "Washington",
+      "seed": 6,
+      "win_pct": 0.677419,
+      "avg_score_margin": 9.4839,
+      "elo": 1819.3079,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 3
+    },
+    "3208": {
+      "gender": "W",
+      "team_name": "Georgia",
+      "seed": 7,
+      "win_pct": 0.709677,
+      "avg_score_margin": 12.0968,
+      "elo": 1758.657,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 3
+    },
+    "3155": {
+      "gender": "W",
+      "team_name": "Clemson",
+      "seed": 8,
+      "win_pct": 0.65625,
+      "avg_score_margin": 9.0,
+      "elo": 1746.2158,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 6
+    },
+    "3425": {
+      "gender": "W",
+      "team_name": "USC",
+      "seed": 9,
+      "win_pct": 0.566667,
+      "avg_score_margin": 7.0667,
+      "elo": 1823.551,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 6
+    },
+    "3113": {
+      "gender": "W",
+      "team_name": "Arizona St",
+      "seed": 10,
+      "win_pct": 0.705882,
+      "avg_score_margin": 5.9412,
+      "elo": 1702.0452,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 6
+    },
+    "3438": {
+      "gender": "W",
+      "team_name": "Virginia",
+      "seed": 10,
+      "win_pct": 0.633333,
+      "avg_score_margin": 10.9667,
+      "elo": 1698.1525,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 6
+    },
+    "3355": {
+      "gender": "W",
+      "team_name": "S Dakota St",
+      "seed": 11,
+      "win_pct": 0.818182,
+      "avg_score_margin": 15.3333,
+      "elo": 1849.5176,
+      "conf_strength": 1424.632,
+      "cluster_rank": 4
+    },
+    "3161": {
+      "gender": "W",
+      "team_name": "Colorado St",
+      "seed": 12,
+      "win_pct": 0.787879,
+      "avg_score_margin": 10.6364,
+      "elo": 1781.557,
+      "conf_strength": 1546.6563,
+      "cluster_rank": 5
+    },
+    "3225": {
+      "gender": "W",
+      "team_name": "Idaho",
+      "seed": 13,
+      "win_pct": 0.84375,
+      "avg_score_margin": 10.9062,
+      "elo": 1757.8361,
+      "conf_strength": 1440.5818,
+      "cluster_rank": 4
+    },
+    "3471": {
+      "gender": "W",
+      "team_name": "UC San Diego",
+      "seed": 14,
+      "win_pct": 0.741935,
+      "avg_score_margin": 7.9355,
+      "elo": 1688.7342,
+      "conf_strength": 1449.2561,
+      "cluster_rank": 7
+    },
+    "3192": {
+      "gender": "W",
+      "team_name": "F Dickinson",
+      "seed": 15,
+      "win_pct": 0.875,
+      "avg_score_margin": 15.8438,
+      "elo": 1668.7155,
+      "conf_strength": 1289.1493,
+      "cluster_rank": 4
+    },
+    "3359": {
+      "gender": "W",
+      "team_name": "Samford",
+      "seed": 16,
+      "win_pct": 0.419355,
+      "avg_score_margin": -7.9032,
+      "elo": 1476.2368,
+      "conf_strength": 1422.5762,
+      "cluster_rank": 8
+    },
+    "3380": {
+      "gender": "W",
+      "team_name": "Southern Univ",
+      "seed": 16,
+      "win_pct": 0.566667,
+      "avg_score_margin": 0.3667,
+      "elo": 1551.4942,
+      "conf_strength": 1297.8526,
+      "cluster_rank": 8
+    },
+    "3400": {
+      "gender": "W",
+      "team_name": "Texas",
+      "seed": 1,
+      "win_pct": 0.911765,
+      "avg_score_margin": 28.3235,
+      "elo": 2143.9855,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 1
+    },
+    "3276": {
+      "gender": "W",
+      "team_name": "Michigan",
+      "seed": 2,
+      "win_pct": 0.806452,
+      "avg_score_margin": 20.6774,
+      "elo": 1961.9154,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 2
+    },
+    "3257": {
+      "gender": "W",
+      "team_name": "Louisville",
+      "seed": 3,
+      "win_pct": 0.794118,
+      "avg_score_margin": 19.1765,
+      "elo": 1984.1424,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 2
+    },
+    "3452": {
+      "gender": "W",
+      "team_name": "West Virginia",
+      "seed": 4,
+      "win_pct": 0.818182,
+      "avg_score_margin": 18.1818,
+      "elo": 1974.4606,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 2
+    },
+    "3246": {
+      "gender": "W",
+      "team_name": "Kentucky",
+      "seed": 5,
+      "win_pct": 0.69697,
+      "avg_score_margin": 15.3939,
+      "elo": 1869.3447,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 3
+    },
+    "3104": {
+      "gender": "W",
+      "team_name": "Alabama",
+      "seed": 6,
+      "win_pct": 0.69697,
+      "avg_score_margin": 8.5758,
+      "elo": 1818.2365,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 3
+    },
+    "3301": {
+      "gender": "W",
+      "team_name": "NC State",
+      "seed": 7,
+      "win_pct": 0.666667,
+      "avg_score_margin": 10.7333,
+      "elo": 1845.4377,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 3
+    },
+    "3332": {
+      "gender": "W",
+      "team_name": "Oregon",
+      "seed": 8,
+      "win_pct": 0.647059,
+      "avg_score_margin": 10.2059,
+      "elo": 1777.7973,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 6
+    },
+    "3439": {
+      "gender": "W",
+      "team_name": "Virginia Tech",
+      "seed": 9,
+      "win_pct": 0.71875,
+      "avg_score_margin": 11.5938,
+      "elo": 1794.1797,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 3
+    },
+    "3397": {
+      "gender": "W",
+      "team_name": "Tennessee",
+      "seed": 10,
+      "win_pct": 0.551724,
+      "avg_score_margin": 7.5517,
+      "elo": 1743.8703,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 6
+    },
+    "3348": {
+      "gender": "W",
+      "team_name": "Rhode Island",
+      "seed": 11,
+      "win_pct": 0.870968,
+      "avg_score_margin": 12.5484,
+      "elo": 1843.9369,
+      "conf_strength": 1560.7609,
+      "cluster_rank": 4
+    },
+    "3241": {
+      "gender": "W",
+      "team_name": "James Madison",
+      "seed": 12,
+      "win_pct": 0.764706,
+      "avg_score_margin": 13.7059,
+      "elo": 1862.998,
+      "conf_strength": 1489.2962,
+      "cluster_rank": 4
+    },
+    "3275": {
+      "gender": "W",
+      "team_name": "Miami OH",
+      "seed": 13,
+      "win_pct": 0.8125,
+      "avg_score_margin": 10.4062,
+      "elo": 1775.863,
+      "conf_strength": 1476.1277,
+      "cluster_rank": 5
+    },
+    "3436": {
+      "gender": "W",
+      "team_name": "Vermont",
+      "seed": 14,
+      "win_pct": 0.78125,
+      "avg_score_margin": 10.625,
+      "elo": 1756.1289,
+      "conf_strength": 1413.4404,
+      "cluster_rank": 7
+    },
+    "3221": {
+      "gender": "W",
+      "team_name": "Holy Cross",
+      "seed": 15,
+      "win_pct": 0.71875,
+      "avg_score_margin": 4.5,
+      "elo": 1648.3465,
+      "conf_strength": 1390.5578,
+      "cluster_rank": 7
+    },
+    "3283": {
+      "gender": "W",
+      "team_name": "Missouri St",
+      "seed": 16,
+      "win_pct": 0.647059,
+      "avg_score_margin": 4.6765,
+      "elo": 1644.6289,
+      "conf_strength": 1486.8167,
+      "cluster_rank": 8
+    },
+    "3372": {
+      "gender": "W",
+      "team_name": "SF Austin",
+      "seed": 16,
+      "win_pct": 0.71875,
+      "avg_score_margin": 7.2812,
+      "elo": 1684.0748,
+      "conf_strength": 1408.1036,
+      "cluster_rank": 7
+    },
+    "3417": {
+      "gender": "W",
+      "team_name": "UCLA",
+      "seed": 1,
+      "win_pct": 0.96875,
+      "avg_score_margin": 28.125,
+      "elo": 2206.127,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 1
+    },
+    "3261": {
+      "gender": "W",
+      "team_name": "LSU",
+      "seed": 2,
+      "win_pct": 0.84375,
+      "avg_score_margin": 33.625,
+      "elo": 2042.7601,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 1
+    },
+    "3181": {
+      "gender": "W",
+      "team_name": "Duke",
+      "seed": 3,
+      "win_pct": 0.75,
+      "avg_score_margin": 15.2188,
+      "elo": 2005.1236,
+      "conf_strength": 1663.6587,
+      "cluster_rank": 2
+    },
+    "3278": {
+      "gender": "W",
+      "team_name": "Minnesota",
+      "seed": 4,
+      "win_pct": 0.733333,
+      "avg_score_margin": 17.0,
+      "elo": 1866.318,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 3
+    },
+    "3279": {
+      "gender": "W",
+      "team_name": "Mississippi",
+      "seed": 5,
+      "win_pct": 0.676471,
+      "avg_score_margin": 13.4412,
+      "elo": 1832.2507,
+      "conf_strength": 1756.4296,
+      "cluster_rank": 3
+    },
+    "3124": {
+      "gender": "W",
+      "team_name": "Baylor",
+      "seed": 6,
+      "win_pct": 0.75,
+      "avg_score_margin": 11.4688,
+      "elo": 1837.4818,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 3
+    },
+    "3403": {
+      "gender": "W",
+      "team_name": "Texas Tech",
+      "seed": 7,
+      "win_pct": 0.78125,
+      "avg_score_margin": 13.9062,
+      "elo": 1775.3846,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 3
+    },
+    "3329": {
+      "gender": "W",
+      "team_name": "Oklahoma St",
+      "seed": 8,
+      "win_pct": 0.709677,
+      "avg_score_margin": 16.3871,
+      "elo": 1834.3091,
+      "conf_strength": 1706.9073,
+      "cluster_rank": 3
+    },
+    "3343": {
+      "gender": "W",
+      "team_name": "Princeton",
+      "seed": 9,
+      "win_pct": 0.896552,
+      "avg_score_margin": 12.5172,
+      "elo": 1903.7074,
+      "conf_strength": 1538.5138,
+      "cluster_rank": 4
+    },
+    "3437": {
+      "gender": "W",
+      "team_name": "Villanova",
+      "seed": 10,
+      "win_pct": 0.78125,
+      "avg_score_margin": 10.4688,
+      "elo": 1890.2596,
+      "conf_strength": 1647.5787,
+      "cluster_rank": 5
+    },
+    "3304": {
+      "gender": "W",
+      "team_name": "Nebraska",
+      "seed": 11,
+      "win_pct": 0.6,
+      "avg_score_margin": 11.6333,
+      "elo": 1700.4409,
+      "conf_strength": 1725.7848,
+      "cluster_rank": 6
+    },
+    "3350": {
+      "gender": "W",
+      "team_name": "Richmond",
+      "seed": 11,
+      "win_pct": 0.787879,
+      "avg_score_margin": 13.6061,
+      "elo": 1868.458,
+      "conf_strength": 1560.7609,
+      "cluster_rank": 5
+    },
+    "3211": {
+      "gender": "W",
+      "team_name": "Gonzaga",
+      "seed": 12,
+      "win_pct": 0.727273,
+      "avg_score_margin": 9.8788,
+      "elo": 1801.2968,
+      "conf_strength": 1524.0813,
+      "cluster_rank": 5
+    },
+    "3453": {
+      "gender": "W",
+      "team_name": "WI Green Bay",
+      "seed": 13,
+      "win_pct": 0.75,
+      "avg_score_margin": 8.875,
+      "elo": 1717.783,
+      "conf_strength": 1442.7008,
+      "cluster_rank": 7
+    },
+    "3158": {
+      "gender": "W",
+      "team_name": "Col Charleston",
+      "seed": 14,
+      "win_pct": 0.833333,
+      "avg_score_margin": 11.7667,
+      "elo": 1731.4349,
+      "conf_strength": 1465.164,
+      "cluster_rank": 4
+    },
+    "3239": {
+      "gender": "W",
+      "team_name": "Jacksonville",
+      "seed": 15,
+      "win_pct": 0.733333,
+      "avg_score_margin": 5.0,
+      "elo": 1664.401,
+      "conf_strength": 1419.2634,
+      "cluster_rank": 7
+    },
+    "3465": {
+      "gender": "W",
+      "team_name": "Cal Baptist",
+      "seed": 16,
+      "win_pct": 0.69697,
+      "avg_score_margin": 6.5152,
+      "elo": 1640.8468,
+      "conf_strength": 1464.1759,
+      "cluster_rank": 7
+    }
+  }
+}
