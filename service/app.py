@@ -5,7 +5,7 @@ from typing import List, Optional
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 
-from predictor import predict_matchup, UnknownTeamError, MismatchedGenderError
+from predictor import predict_matchup, UnknownTeamError, MismatchedGenderError, SameTeamError
 
 app = FastAPI(title="March Mania Prediction Service")
 
@@ -55,7 +55,7 @@ def predict(request: PredictRequest):
         try:
             p = predict_matchup(m.team1, m.team2)
             results.append(PredictionResult(team1=m.team1, team2=m.team2, prediction=p))
-        except (UnknownTeamError, MismatchedGenderError) as e:
+        except (UnknownTeamError, MismatchedGenderError, SameTeamError) as e:
             # one bad matchup in a batch of 128 shouldn't fail the other 127 --
             # record the error for this one row and keep going
             results.append(PredictionResult(team1=m.team1, team2=m.team2, error=str(e)))

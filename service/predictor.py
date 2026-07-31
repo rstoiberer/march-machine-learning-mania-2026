@@ -29,6 +29,10 @@ class MismatchedGenderError(Exception):
     pass
 
 
+class SameTeamError(Exception):
+    pass
+
+
 def _predict_canonical(lower_id: str, higher_id: str) -> float:
     """Returns P(lower_id beats higher_id), evaluating the model in the exact same direction
     it was trained in throughout this project: Team1 is always the lower TeamID."""
@@ -58,6 +62,9 @@ def predict_matchup(team1: int, team2: int) -> float:
     returns either that probability or its complement (1 - p) depending on which side the
     caller's team1 actually is. This guarantees P(A beats B) + P(B beats A) == 1 exactly,
     every time, rather than running the model twice in two slightly different directions."""
+    if team1 == team2:
+        raise SameTeamError(f"team {team1} cannot play itself")
+
     t1 = TEAMS.get(str(team1))
     t2 = TEAMS.get(str(team2))
     if t1 is None:
@@ -100,3 +107,8 @@ if __name__ == "__main__":
         predict_matchup(int(t1), int(w_id))
     except MismatchedGenderError as e:
         print(f"mismatched-gender check passed: {e}")
+
+    try:
+        predict_matchup(int(t1), int(t1))
+    except SameTeamError as e:
+        print(f"same-team check passed: {e}")
