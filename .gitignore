@@ -9,3 +9,4 @@ notebooks/Untitled.ipynb
 notebooks/*_transcript.txt
 anaconda_projects/
 __pycache__/
+docs/meeting-notes-*.md
